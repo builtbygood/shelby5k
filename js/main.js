@@ -44,6 +44,34 @@ $(function(){
 
   });
 
+
+  function scrollStuff()
+  {
+      var scroll_top  = $(window).scrollTop();
+      var about_top   = $('.about').offset().top -80;
+      var race_top    = $('.race').offset().top -80;
+      var help_top    = $('.help').offset().top -80;
+      var contact_top = $('footer').offset().top -80;
+      
+      if( about_top > scroll_top){
+        $('.about-btn').removeClass('active');
+      }
+      if( about_top <= scroll_top){
+        $('.about-btn').addClass('active').siblings().removeClass('active');
+      }
+      if( race_top <= scroll_top){
+        $('.race-btn').addClass('active').siblings().removeClass('active');
+      }
+      if( help_top <= scroll_top){
+        $('.help-btn').addClass('active').siblings().removeClass('active');
+      }    
+      if( contact_top <= scroll_top){
+        $('.contact-btn').addClass('active').siblings().removeClass('active');
+      }        
+  }
+
+  $(window).on('scroll', scrollStuff);
+
 	
 });
 

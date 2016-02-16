@@ -21,7 +21,29 @@ $(function(){
       $('html,body').animate({ scrollTop: contact_top + 'px' });
       $(this).addClass('active').siblings().removeClass('active');
   });
-	
+
+  $('.modal-btn').on('click', function(){
+  
+      $('.modal').fadeIn();
+  
+  });
+
+  $('.modal').mousedown(function(e) {
+
+    var clicked = $(e.target); 
+
+    if (clicked.is('.modal-form') || clicked.parents().is('.modal-form')) {
+
+        return; 
+
+    } else {
+
+        $('.modal').fadeOut();
+
+    }
+
+  });
+
 	
 });
 

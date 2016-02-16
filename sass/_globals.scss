@@ -86,11 +86,40 @@ p{
   line-height:50px;
   padding:0 40px;
   background:#3bb54a;
-  color:white;  
-  
+  color:white; 
+  @include transition( all 0.5s $easeOutExpo ); 
 }
 .shadow-btn{
   box-shadow:-4px 4px 0 0 rgba(0,0,0,0.35);
+  @include transition( all 0.5s $easeOutExpo );
+  cursor:pointer;
+}
+.race .shadow-btn, .help .shadow-btn{
+  &:hover{
+    background:#3bb54a;
+    color:white;
+  }
+  &:active{
+    box-shadow:-1px 1px 0 0 rgba(0,0,0,0.35);
+  }
+}
+.directions-btn{
+  &:hover{
+    background:white;
+    color:#3bb54a;
+  }
+}
+form button{
+  &:hover{
+    background:white;
+    color:#e61c36;
+  }
+  &:active{
+    box-shadow:-1px 1px 0 0 rgba(0,0,0,0.35);
+  }
+  &:focus{
+    outline:none;
+  }
 }
 /* ––––––––––––––––––––––––––––––––––––––––––––
 GLOBAL STYLES
@@ -171,6 +200,14 @@ nav{
     font-size:22px;
     line-height:80px;
     margin-right:30px;
+    cursor:pointer;
+    @include transition( all 0.5s $easeOutExpo );
+    &:hover{
+      color:#3bb54a;
+    } 
+    &.active{
+      color:#3bb54a;
+    }
   }
 }
 .register-donate-btns{
@@ -189,8 +226,27 @@ nav{
     margin-left:10px;
     background:#3bb54a;
     color:white;
+    cursor:pointer;
     &.register-btn{
       background:#2c3691;
+    }
+  }
+  .donate-btn{
+    &:hover{
+      background:white;
+      color:#3bb54a;
+    }
+    &:active{
+      box-shadow:-1px 1px 0 0 rgba(0,0,0,0.35);
+    }
+  }
+  .register-btn{
+    &:hover{
+      background:white;
+      color:#2c3691;
+    }
+    &:active{
+      box-shadow:-1px 1px 0 0 rgba(0,0,0,0.35);
     }
   }
 }
@@ -290,7 +346,8 @@ form{
     margin-bottom:20px;
     font-size:16px;
     &:focus{
-      outline-color:#3bb54a;
+      border-color:#e61c36;
+      outline:none;
     }
   }
   textarea{
@@ -302,7 +359,8 @@ form{
     min-width:100%;
     font-size:16px;
     &:focus{
-      outline-color:#3bb54a;
+      border-color:#e61c36;
+      outline:none;
     }
   }
   button{

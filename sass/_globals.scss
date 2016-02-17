@@ -112,7 +112,7 @@ p{
 form button{
   &:hover{
     background:white;
-    color:#e61c36;
+    color:#ab0101;
   }
   &:active{
     box-shadow:-1px 1px 0 0 rgba(0,0,0,0.35);
@@ -203,10 +203,10 @@ nav{
     cursor:pointer;
     @include transition( all 0.5s $easeOutExpo );
     &:hover{
-      color:#3bb54a;
+      color:#ab0101;
     } 
     &.active{
-      color:#3bb54a;
+      color:#ab0101;
     }
   }
 }
@@ -272,11 +272,11 @@ footer{
   background:#2c3691;
   color:white;
   .col-75{
-    margin-top:65px;
+    margin-top:50px;
   }
   h2{
-    font-size:70px;
-    line-height:70px;
+    font-size:60px;
+    line-height:52px;
     margin-bottom:0;
   }
   h3{
@@ -285,7 +285,7 @@ footer{
   .date{
     display:block;
     font-weight:300;
-    font-size:34px;
+    font-size:28px;
     line-height:34px;
   }
   span{
@@ -372,7 +372,7 @@ form{
     font-weight:700;
     font-size:26px;
     line-height:50px;
-    background:#e61c36;
+    background:#ab0101;
     color:white;  
   }
 }

@@ -140,7 +140,12 @@
       <form>
         <input type="text" placeholder="Name">
         <input type="text" placeholder="Email">
-        <input type="text" placeholder="Subject">
+        <select name="inquiry-type" required>
+          <option value="race-question" selected>Race Question</option> 
+          <option value="sponsorship">Sponsorship</option>
+          <option value="volunteering">Volunteering</option>
+          <option value="other">Other</option>
+        </select>
         <textarea placeholder="Message"></textarea>
         <button type="submit" class="shadow-btn">Send Message</button>
       </form>

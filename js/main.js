@@ -16,6 +16,11 @@ $(function(){
       $('html,body').animate({ scrollTop: help_top + 'px' });
       $(this).addClass('active').siblings().removeClass('active');
   });
+  $('.sponsorship-btn').on('click', function(){
+      var sponsorship_top   = $('.sponsorship').offset().top;
+      $('html,body').animate({ scrollTop: sponsorship_top + 'px' });
+      $(this).addClass('active').siblings().removeClass('active');
+  });
   $('.contact-btn').on('click', function(){
       var contact_top   = $('footer').offset().top;
       $('html,body').animate({ scrollTop: contact_top + 'px' });
@@ -47,11 +52,12 @@ $(function(){
 
   function scrollStuff()
   {
-      var scroll_top  = $(window).scrollTop();
-      var about_top   = $('.about').offset().top -80;
-      var race_top    = $('.race').offset().top -80;
-      var help_top    = $('.help').offset().top -80;
-      var contact_top = $('footer').offset().top -80;
+      var scroll_top          = $(window).scrollTop();
+      var about_top           = $('.about').offset().top -80;
+      var race_top            = $('.race').offset().top -80;
+      var help_top            = $('.help').offset().top -80;
+      var sponsorship_top     = $('.sponsorship').offset().top -80;
+      var contact_top         = $('footer').offset().top -80;
       
       if( about_top > scroll_top){
         $('.about-btn').removeClass('active');
@@ -64,7 +70,10 @@ $(function(){
       }
       if( help_top <= scroll_top){
         $('.help-btn').addClass('active').siblings().removeClass('active');
-      }    
+      }
+      if( sponsorship_top <= scroll_top){
+        $('.sponsorship-btn').addClass('active').siblings().removeClass('active');
+      }
       if( contact_top <= scroll_top){
         $('.contact-btn').addClass('active').siblings().removeClass('active');
       }        

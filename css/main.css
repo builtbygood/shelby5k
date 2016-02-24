@@ -625,6 +625,9 @@ MEDIA QUERIES
       margin-top: 20px; }
     .help .row {
       margin-top: 0; } }
+* {
+  -webkit-appearance: none; }
+
 @media (max-width: 480px) {
   .register-donate-btns {
     width: 100%;

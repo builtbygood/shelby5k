@@ -724,7 +724,9 @@ MEDIA QUERIES
 }
 
 
-
+*{
+  -webkit-appearance: none;
+}
 @media (max-width:480px){
 
   .register-donate-btns{

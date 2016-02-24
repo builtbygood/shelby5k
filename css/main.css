@@ -409,7 +409,7 @@ MODAL
   width: 100%;
   height: 100%;
   z-index: 888;
-  background: rgba(255, 255, 255, 0.95);
+  background: white;
   overflow: scroll; }
   .modal .modal-form {
     width: 100%;

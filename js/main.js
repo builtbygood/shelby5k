@@ -27,9 +27,19 @@ $(function(){
       $(this).addClass('active').siblings().removeClass('active');
   });
 
-  $('.modal-btn').on('click', function(){
+  $('.donate-modal-btn').on('click', function(){
   
-      $('.modal').fadeIn();
+      $('.donate-modal').fadeIn();
+  
+  });
+  $('.register-modal-btn').on('click', function(){
+  
+      $('.register-modal').fadeIn();
+  
+  });
+  $('.tshirt-modal-btn').on('click', function(){
+  
+      $('.tshirt-modal').fadeIn();
   
   });
 

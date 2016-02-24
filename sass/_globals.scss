@@ -724,7 +724,7 @@ MEDIA QUERIES
 }
 
 
-*{
+input[type="submit"], button{
   -webkit-appearance: none;
 }
 @media (max-width:480px){

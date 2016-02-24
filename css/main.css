@@ -625,7 +625,7 @@ MEDIA QUERIES
       margin-top: 20px; }
     .help .row {
       margin-top: 0; } }
-* {
+input[type="submit"], button {
   -webkit-appearance: none; }
 
 @media (max-width: 480px) {

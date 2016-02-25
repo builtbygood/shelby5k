@@ -103,6 +103,15 @@ p{
     box-shadow:-1px 1px 0 0 rgba(0,0,0,0.35);
   }
 }
+.pray-modal .shadow-btn{
+  &:hover{
+    background:white;
+    color:#dd4948;
+  }
+  &:active{
+    box-shadow:-1px 1px 0 0 rgba(0,0,0,0.35);
+  }
+}
 .directions-btn{
   &:hover{
     background:white;
@@ -469,6 +478,33 @@ MODAL
     font-size:40px;
     line-height:40px;
   }
+}
+.pray-modal{
+  text-align:center;
+  .btn{
+    text-decoration: none;
+    margin-top:30px;
+    width:100%;
+    background:#dd4948;
+    height:70px;
+    line-height:70px;
+  }
+  ul{
+    list-style:none;
+    text-align:center;
+    li{
+      font-size:20px;
+      line-height:36px;
+    }
+  }
+}
+.close-btn{
+  position:absolute;
+  top:100px;
+  width:100px;
+  left:50%;margin-left:-50px;
+  text-align:center;
+  cursor:pointer;
 }
 
  form{

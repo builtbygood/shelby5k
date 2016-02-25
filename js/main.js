@@ -42,6 +42,11 @@ $(function(){
       $('.tshirt-modal').fadeIn();
   
   });
+  $('.pray-modal-btn').on('click', function(){
+  
+      $('.pray-modal').fadeIn();
+  
+  });
 
   $('.modal').mousedown(function(e) {
 

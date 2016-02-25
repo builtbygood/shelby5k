@@ -77,6 +77,18 @@ p{
   line-height:30px;
   -webkit-font-smoothing:antialiased;
 }
+.scroll-arrow{
+  position:absolute;
+  width:30px;
+  bottom:30px;
+  left:50%;
+  margin-left:-15px;
+  z-index:999;
+  @include transition( opacity 0.5s $easeOutExpo ); 
+  &.active{
+    @include opacity(0);
+  }
+}
 .btn{
   display:inline-block;
   height:50px;
@@ -477,6 +489,15 @@ MODAL
     text-align: center;
     font-size:40px;
     line-height:40px;
+  }
+}
+.sponsor-modal{
+  a{
+    display:block;
+    width:100%;
+    text-align:center;
+    color:#dd4948;
+    margin-bottom:30px;
   }
 }
 .pray-modal{

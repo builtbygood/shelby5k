@@ -76,6 +76,22 @@ p {
   line-height: 30px;
   -webkit-font-smoothing: antialiased; }
 
+.scroll-arrow {
+  position: absolute;
+  width: 30px;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -15px;
+  z-index: 999;
+  -webkit-transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1); }
+  .scroll-arrow.active {
+    opacity: 0;
+    filter: alpha(opacity=0); }
+
 .btn {
   display: inline-block;
   height: 50px;
@@ -432,6 +448,13 @@ MODAL
     text-align: center;
     font-size: 40px;
     line-height: 40px; }
+
+.sponsor-modal a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #dd4948;
+  margin-bottom: 30px; }
 
 .pray-modal {
   text-align: center; }

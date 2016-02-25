@@ -47,6 +47,11 @@ $(function(){
       $('.pray-modal').fadeIn();
   
   });
+  $('.sponsor-modal-btn').on('click', function(){
+  
+      $('.sponsor-modal').fadeIn();
+  
+  });
 
   $('.modal').mousedown(function(e) {
 
@@ -91,7 +96,9 @@ $(function(){
       }
       if( contact_top <= scroll_top){
         $('.contact-btn').addClass('active').siblings().removeClass('active');
-      }        
+      } 
+
+      $('.scroll-arrow').addClass('active');       
   }
 
   $(window).on('scroll', scrollStuff);

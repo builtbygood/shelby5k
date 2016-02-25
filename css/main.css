@@ -423,6 +423,9 @@ form{
 MODAL
 
 ––––––––––––––––––––––––––––––––––––––––––– */
+.contact-form select {
+  width: 100%; }
+
 .modal {
   display: none;
   position: fixed;

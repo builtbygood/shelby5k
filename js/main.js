@@ -27,9 +27,29 @@ $(function(){
       $(this).addClass('active').siblings().removeClass('active');
   });
 
-  $('.modal-btn').on('click', function(){
+  $('.donate-modal-btn').on('click', function(){
   
-      $('.modal').fadeIn();
+      $('.donate-modal').fadeIn();
+  
+  });
+  $('.register-modal-btn').on('click', function(){
+  
+      $('.register-modal').fadeIn();
+  
+  });
+  $('.tshirt-modal-btn').on('click', function(){
+  
+      $('.tshirt-modal').fadeIn();
+  
+  });
+  $('.pray-modal-btn').on('click', function(){
+  
+      $('.pray-modal').fadeIn();
+  
+  });
+  $('.sponsor-modal-btn').on('click', function(){
+  
+      $('.sponsor-modal').fadeIn();
   
   });
 
@@ -76,7 +96,9 @@ $(function(){
       }
       if( contact_top <= scroll_top){
         $('.contact-btn').addClass('active').siblings().removeClass('active');
-      }        
+      } 
+
+      $('.scroll-arrow').addClass('active');       
   }
 
   $(window).on('scroll', scrollStuff);

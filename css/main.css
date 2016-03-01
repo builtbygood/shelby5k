@@ -435,7 +435,8 @@ MODAL
   height: 100%;
   z-index: 888;
   background: white;
-  overflow: scroll; }
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
   .modal .modal-form {
     width: 100%;
     max-width: 600px;

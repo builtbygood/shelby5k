@@ -70,6 +70,23 @@ $(function(){
   });
 
 
+  $('form .toggle').slideUp();
+  $('.toggle input').removeAttr('required');
+  $('.toggle-btn').on('click', function(){
+      $(this).parent().find('.toggle').toggle().find('input');
+
+      if( $(this).parent().find('.toggle').is(":visible") ){
+
+        $(this).parent().find('.toggle').find('input').attr('required', true);
+
+      } else{
+
+        $(this).parent().find('.toggle').find('input').removeAttr('required');
+
+      }
+  });
+
+
   function scrollStuff()
   {
       var scroll_top          = $(window).scrollTop();

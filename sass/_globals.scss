@@ -57,6 +57,22 @@ HELPERS
 /* ––––––––––––––––––––––––––––––––––––––––––––
 TYPOGRAPHY
 ––––––––––––––––––––––––––––––––––––––––––– */
+.toggle-btn{
+  h4{
+    display:inline;
+  }
+  span{
+    display:inline-block;
+    margin:-2px 0 0 8px;
+    vertical-align:middle;
+    width:20px;height:20px;
+    background:black;
+    color:white;
+    text-align:center;
+    font-size:18px;
+    line-height:20px;
+  }
+}
 h2{
   display:block;
   margin-bottom:30px;
